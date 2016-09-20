@@ -94,7 +94,7 @@ public class UnityChanController : MonoBehaviour {
 	void OnTriggerEnter(Collider other) {
 
 		//障害物に衝突した場合（追加）
-		if (other.gameObject.tag == "CarTag" || other.gameObject.tag == "ConeTag") {
+		if (other.gameObject.tag == "CarTag" || other.gameObject.tag == "TrafficConeTag") {
 			this.isEnd = true;
 			//stateTextにGAME OVERを表示（追加）
 			this.stateText.GetComponent<Text>().text = "GAME OVER";
